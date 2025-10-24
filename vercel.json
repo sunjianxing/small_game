@@ -1,8 +1,18 @@
 {
   "builds": [
-    { "src": "api/addictive_dodge_game.py", "use": "@vercel/python" }
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "static/**/*",
+      "use": "@vercel/static"
+    }
   ],
   "routes": [
-    { "src": "/", "dest": "/api/addictive_dodge_game.py" }
+    {
+      "src": "/",
+      "dest": "/index.html"
+    }
   ]
 }

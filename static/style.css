@@ -1,0 +1,23 @@
+*{box-sizing:border-box}
+:root{
+  --bg1:#040714;
+  --bg2:#0b1b3a;
+  --neon1:#00ffea;
+  --neon2:#7a00ff;
+  --accent:#ff2d95;
+}
+html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Helvetica,Arial;color:#eaf6ff;background:linear-gradient(180deg,var(--bg1),var(--bg2));display:flex;align-items:center;justify-content:center}
+#wrap{width:92vw;max-width:1100px;padding:18px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01));box-shadow:0 20px 60px rgba(2,6,23,0.7);border:1px solid rgba(255,255,255,0.03)}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.top h1{font-size:20px;margin:0;color:white;letter-spacing:0.6px}
+.hud{display:flex;gap:18px;font-weight:600;color:rgba(255,255,255,0.9)}
+.canvas-wrap{position:relative;border-radius:12px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,0.5)}
+canvas{display:block;width:100%;height:auto;background:transparent}
+.overlay{position:absolute;left:0;top:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#e8fbff;text-align:center;pointer-events:none}
+.controls{display:flex;align-items:center;gap:12px;margin-top:12px}
+.btn{background:linear-gradient(90deg,var(--neon1),var(--neon2));color:#041228;padding:8px 14px;border-radius:10px;border:none;cursor:pointer;font-weight:700;box-shadow:0 8px 20px rgba(122,0,255,0.18);transition:transform .12s ease}
+.btn:hover{transform:translateY(-3px)}
+.hint{color:rgba(255,255,255,0.7);margin-left:8px}
+.foot{margin-top:12px;font-size:12px;color:rgba(255,255,255,0.45)}
+/* neon glow for canvas elements when drawn */
+.neon { filter: drop-shadow(0 0 8px rgba(0,255,234,0.45)) drop-shadow(0 0 20px rgba(122,0,255,0.10)); }

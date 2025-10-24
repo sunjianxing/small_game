@@ -1,0 +1,8 @@
+{
+  "builds": [
+    { "src": "api/addictive_dodge_game.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/api/addictive_dodge_game.py" }
+  ]
+}
